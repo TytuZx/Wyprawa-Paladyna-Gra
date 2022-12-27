@@ -48,7 +48,7 @@ class Load_player extends Phaser.Scene{
                 start:32,
                 end:39
             }),
-            frameRate:16,
+            frameRate:64,
             repeat:0
         });
         this.anims.create({
@@ -57,7 +57,7 @@ class Load_player extends Phaser.Scene{
                 start:40,
                 end:47
             }),
-            frameRate:16,
+            frameRate:64,
             repeat:0
         });
         this.anims.create({
@@ -66,7 +66,7 @@ class Load_player extends Phaser.Scene{
                 start:48,
                 end:55
             }),
-            frameRate:16,
+            frameRate:64,
             repeat:0
         });
         this.anims.create({
@@ -75,7 +75,7 @@ class Load_player extends Phaser.Scene{
                 start:56,
                 end:63
             }),
-            frameRate:16,
+            frameRate:64,
             repeat:0
         });
 

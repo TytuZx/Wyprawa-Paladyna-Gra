@@ -27,13 +27,11 @@ class Slash extends Phaser.GameObjects.Sprite{
             this.body.velocity.y = +1500;
         }
 
-        
-
         scene.slashes.add(this);
     }
 
     update(){
-        if(Phaser.Math.Distance.Between(this.x,this.y,this.scene.player.x,this.scene.player.y)>50){
+        if(Phaser.Math.Distance.Between(this.x,this.y,this.scene.player.x,this.scene.player.y)>gameSettings.player_attack_range){
             this.destroy();
         }
     }

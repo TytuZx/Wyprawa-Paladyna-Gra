@@ -9,6 +9,7 @@ class Preload extends Phaser.Scene{
         this.load.spritesheet("zombie2", "assets/enemy/zombie2.png",{frameWidth:32, frameHeight:32});
         this.load.spritesheet("zombie3", "assets/enemy/zombie3.png",{frameWidth:32, frameHeight:32});
         this.load.spritesheet("BOSS", "assets/enemy/boss.png",{frameWidth:96, frameHeight:48});
+        this.load.spritesheet("missle", "assets/enemy/missle.png",{frameWidth:128,frameHeight:128});
         this.load.image("Heartfull","assets/gui/heart_full.png");
         this.load.image("Heartempty","assets/gui/heart_empty.png");
         this.load.image("Slash","assets/gui/slash.png");

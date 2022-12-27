@@ -123,7 +123,7 @@ class Load_enemy extends Phaser.Scene{
                 start:0,
                 end:2
             }),
-            frameRate:20,
+            frameRate:6,
             repeat:0
         });
         this.anims.create({
@@ -132,7 +132,7 @@ class Load_enemy extends Phaser.Scene{
                 start:3,
                 end:5
             }),
-            frameRate:20,
+            frameRate:6,
             repeat:0
         });
         this.anims.create({
@@ -141,7 +141,7 @@ class Load_enemy extends Phaser.Scene{
                 start:6,
                 end:8
             }),
-            frameRate:20,
+            frameRate:6,
             repeat:0
         });
         this.anims.create({
@@ -150,8 +150,18 @@ class Load_enemy extends Phaser.Scene{
                 start:9,
                 end:11
             }),
-            frameRate:20,
+            frameRate:6,
             repeat:0
+        });
+
+        this.anims.create({
+            key: "missile",
+            frames: this.anims.generateFrameNumbers("missle",{
+                start:0,
+                end:8
+            }),
+            frameRate:32,
+            repeat:-1
         });
 
 

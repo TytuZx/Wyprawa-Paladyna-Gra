@@ -10,10 +10,5 @@ class Zombie extends Phaser.GameObjects.Sprite{
         scene.physics.world.enableBody(this);
 
         scene.zombies.add(this);
-
-
     }
-
-    
-    
 }
