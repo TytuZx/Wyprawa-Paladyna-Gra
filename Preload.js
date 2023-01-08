@@ -46,7 +46,7 @@ class Preload extends Phaser.Scene{
         this.add.text(20,20,"Loading game...");
 
         this.add.image(config.width/2,config.height/2,"tekst_wprow");
-        this.add.text(config.width/2,(config.height/2)+250,'nacisnij spacje aby kontynuowac...',{fill:"Red"});
+        this.add.text(config.width/2,(config.height/2)+250,'poruszasz sie strzalkami, atakujesz spacja\n nacisnij spacje aby kontynuowac...',{fill:"Red"});
 
         this.input.keyboard.on('keydown-SPACE', this.startgame, this);
     }

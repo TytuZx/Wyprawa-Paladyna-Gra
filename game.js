@@ -18,16 +18,17 @@
         TileSizeY:32,
 
         player_speed:200,
-        player_attack_range:50,
-        player_max_hp:10,
+        player_attack_range:75,
+        player_max_hp:5,
 
         Scrolls_to_collect:5,
 
-        zombie_speed:100,
-        zombie_max:5,
+        zombie_speed:80,
+        zombie_max:10,
         Boss_speed:150,
-        Boss_HP_max:5,
-        Boss_atackspeed:500
+        Boss_HP_max:10,
+        Boss_atackspeed:600,
+        Boss_missle_speed:200
     }
 
     var game = new Phaser.Game(config);

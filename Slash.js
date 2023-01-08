@@ -11,19 +11,19 @@ class Slash extends Phaser.GameObjects.Sprite{
 
         if (faced==1){
             this.setAngle(180)
-            this.setScale(1.5)
+            this.setScale(2)
             this.body.velocity.x = -1500;
         } else if (faced==2) {
             this.setAngle(0)
-            this.setScale(1.5)
+            this.setScale(2)
             this.body.velocity.x = +1500;
         } else if (faced==3) {
             this.setAngle(-90)
-            this.setScale(1.5)
+            this.setScale(2)
             this.body.velocity.y = -1500;
         } else if (faced==4) {
             this.setAngle(90)
-            this.setScale(1.5)
+            this.setScale(2)
             this.body.velocity.y = +1500;
         }
 

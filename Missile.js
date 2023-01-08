@@ -9,7 +9,7 @@ class Missile extends Phaser.GameObjects.Sprite{
 
         this.setRotation(rot);
 
-        scene.physics.velocityFromRotation(rot, 300, this.body.velocity);
+        scene.physics.velocityFromRotation(rot, gameSettings.Boss_missle_speed, this.body.velocity);
 
         scene.missiles.add(this);
     }

@@ -37,6 +37,9 @@ class Play extends Phaser.Scene{
         this.physics.add.overlap(this.zombies, this.player, this.hit_player, null, this);
         this.physics.add.overlap(this.slashes, this.zombies, this.hitEnemy, null, this);
         this.physics.add.overlap(this.slashes, this.boss, this.hitBoss, null, this);
+        this.physics.add.overlap(this.slashes, this.walls, this.hititem, null, this);
+        this.physics.add.overlap(this.slashes, this.items, this.hititem, null, this);
+        this.physics.add.overlap(this.missiles, this.walls, this.hititem, null, this);
         this.physics.add.overlap(this.missiles, this.player, this.hit_player, null, this);
         this.physics.add.overlap(this.health_packs, this.player, this.heal, null, this);
         this.physics.add.overlap(this.scrolls, this.player, this.scroll_pickup, null, this);
@@ -341,6 +344,10 @@ class Play extends Phaser.Scene{
     hitEnemy(slash, zombie) {
         var blood = new Splash(this, zombie.x, zombie.y);
         zombie.destroy();
+        slash.destroy();
+    }
+
+    hititem(slash, item) {
         slash.destroy();
     }
 
