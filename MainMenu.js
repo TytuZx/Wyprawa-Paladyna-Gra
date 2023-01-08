@@ -1,19 +1,19 @@
-class GameOver extends Phaser.Scene{
+class MainMenu extends Phaser.Scene{
     constructor(){
-        super("gameover");
+        super("mainmenu");
     }
 
     preload(){
-        this.load.image("gameover_screen","assets/gui/gameover.png");
+        this.load.image("button_normal","assets/gui/button/normal.png");
+        this.load.image("button_hover","assets/gui/button/hover.png");
+        this.load.image("button_pressed","assets/gui/button/pressed.png");
+        this.load.image("title","assets/gui/button/title.png");
     }
 
     create(){
-        this.add.image(config.width/2,config.height/4,"gameover_screen");
+        this.add.image(config.width/2,config.height/4,"title");
 
-        this.add.text(config.width/3,config.height/2,"Nie zyjesz, ten loch stal sie twoim grobowcem\n\nChcesz sprobowac jeszcze raz?");
-
-        
-        var button = this.add.image(config.width/2,(config.height/2)+200,"button_normal").setInteractive();
+        var button = this.add.image(config.width/2,config.height/2,"button_normal").setInteractive();
 
         button.on('pointerover', function (event, gameObject) {
             button.setTexture("button_hover");

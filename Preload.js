@@ -39,10 +39,19 @@ class Preload extends Phaser.Scene{
         this.load.image("wall_corner_right","assets/castle/wall_corner_right.png");
         this.load.image("wall_side_left","assets/castle/wall_side_left.png");
         this.load.image("wall_side_right","assets/castle/wall_side_right.png");
+        this.load.image("tekst_wprow","assets/gui/button/tekst.png");
     }
 
     create(){
         this.add.text(20,20,"Loading game...");
+
+        this.add.image(config.width/2,config.height/2,"tekst_wprow");
+        this.add.text(config.width/2,(config.height/2)+250,'nacisnij spacje aby kontynuowac...',{fill:"Red"});
+
+        this.input.keyboard.on('keydown-SPACE', this.startgame, this);
+    }
+
+    startgame(){
         this.scene.start("load_player");
     }
 }

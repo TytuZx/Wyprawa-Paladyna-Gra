@@ -411,6 +411,11 @@ class Play extends Phaser.Scene{
     scroll_pickup(player,scroll){
         if(this.zombies.getChildren().length<=0){
             this.Scrolls_collected+=1;
+            if(this.Scrolls_collected==1){
+                this.add.text(scroll.x,scroll.y,"To pierwsza czesc zaklecia... Musze znalezc pozostale.")
+            } else if(this.Scrolls_collected==gameSettings.Scrolls_to_collect){
+                this.add.text(scroll.x,scroll.y,"Nareszcie zebralem cale zaklecie teraz powinna mi sie ukazac komnata krola demonow")
+            }
             scroll.destroy();
             this.scrolls_display()
         }
