@@ -2,7 +2,7 @@
         width: 1600,
         height: 900,
         background: 0x000000,
-        scene: [MainMenu, Preload, Loadplayer, Loadenemy, Play, GameOver, Winner],
+        scene: [MainMenu, Preload, Load_Animations, Play, GameOver, Winner],
         physics: {
             default: "arcade",
             arcade:{

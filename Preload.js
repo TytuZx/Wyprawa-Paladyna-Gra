@@ -52,6 +52,6 @@ class Preload extends Phaser.Scene{
     }
 
     startgame(){
-        this.scene.start("loadplayer");
+        this.scene.start("load_animations");
     }
 }
