@@ -1,6 +1,6 @@
-class Load_player extends Phaser.Scene{
+class Loadplayer extends Phaser.Scene{
     constructor(){
-        super("load_player");
+        super("loadplayer");
     }
 
     create(){
@@ -79,6 +79,6 @@ class Load_player extends Phaser.Scene{
             repeat:0
         });
 
-        this.scene.start("load_enemy");
+        this.scene.start("loadenemy");
     }
 }

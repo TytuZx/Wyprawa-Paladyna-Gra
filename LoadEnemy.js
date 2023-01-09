@@ -1,6 +1,6 @@
-class Load_enemy extends Phaser.Scene{
+class Loadenemy extends Phaser.Scene{
     constructor(){
-        super("load_enemy");
+        super("loadenemy");
     }
 
     create(){
