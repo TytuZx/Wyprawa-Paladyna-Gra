@@ -1,6 +1,0 @@
-1.Generowanie kolejnych poziomów
-2.generowanie drzwi
-3.generowanie scrolli
-4.sprawdzenie ilości scrolli
-5.komnata bosa
-6.Boss
